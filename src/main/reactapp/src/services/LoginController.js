@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import {API_NODE_URL_LOGIN} from '../config'
 

@@ -1,6 +1,5 @@
 
 
-// export const API_NODE_URL = "http://localhost:8080/MediTrust_war_exploded";
 export const API_NODE_URL = "http://localhost:5000";
 
 export const API_NODE_URL_LOGIN = API_NODE_URL + "/api/log-in";

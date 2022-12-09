@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import '../../assets/styles/index.css';
 import '../../assets/styles/login.css';
@@ -64,7 +64,7 @@ class SignUp extends React.Component {
                             <label className="error password"></label>
                         </div>
                         <div className="hrem-form-input">
-                            <input type="number" name="age" placeholder="Your age" autoComplete="off"/>
+                            <input type="number" name="age" placeholder="Your age" min="0" autoComplete="off"/>
                             <label className="error age"></label>
                         </div>
                         <div className="hrem-form-select">

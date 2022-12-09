@@ -20,7 +20,7 @@ class SignUpController extends React.Component {
         const inputRole = document.querySelector("select[name='role']");
         const inputFirstName = document.querySelector("input[name='firstname']");
         const inputLastName = document.querySelector("input[name='lastname']");
-        const inputGender = document.querySelector("input[name='gender']");
+        const inputGender = document.querySelector("input[name='gender']:checked");
         const inputAge = document.querySelector("input[name='age']");
         const error = document.querySelector(".error.signup");
         const errorEmail = document.querySelector(".error.email");
@@ -35,7 +35,7 @@ class SignUpController extends React.Component {
         const email = inputEmail.value;
         const password = inputPassword.value;
         const role = inputRole.value;
-        const gender = inputGender.value;
+        const gender = inputGender ? inputGender.value : "";
         const firstName = inputFirstName.value;
         const lastName = inputLastName.value;
         const age = inputAge.value;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import '../../assets/styles/index.css';
 import '../../assets/styles/userlist.css';

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import '../../assets/styles/index.css';
 import '../../assets/styles/dashboard.css';
@@ -76,23 +76,30 @@ class Dashboard extends React.Component {
                     <div className="hrem-tools">
                         <button className="hrem-dashboard-sheet sheet-1">
                             <a>
-                                <i className="fa fa-arrow-circle-o-down"></i>
+                                <i className="fa fa-file-excel-o"></i>
                                 Sheet 1
                             </a>
                         </button>
                         <button className="hrem-dashboard-sheet sheet-2">
                             <a>
-                                <i className="fa fa-arrow-circle-o-down"></i>
+                                <i className="fa fa-file-excel-o"></i>
                                 Sheet 2
                             </a>
                         </button>
                         <button className="hrem-dashboard-sheet sheet-3">
                             <a>
-                                <i className="fa fa-arrow-circle-o-down"></i>
+                                <i className="fa fa-file-excel-o"></i>
                                 Sheet 3
                             </a>
                         </button>
                     </div>
+
+                    <button className="hrem-dashboard-sheet download">
+                        <a>
+                            <i className="fa fa-arrow-circle-o-down"></i>
+                            Download
+                        </a>
+                    </button>
 
                     <table className="hrem-dashboard-data-table">
 
