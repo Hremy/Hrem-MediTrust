@@ -23,7 +23,6 @@ public class APISignup extends HttpServlet{
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        response.addHeader("Access-Control-Allow-Origin", "http://localhost:3000");
         response.addHeader("Access-Control-Allow-Origin", "http://localhost:5000");
         response.addHeader("Access-Control-Allow-Methods", "POST");
 

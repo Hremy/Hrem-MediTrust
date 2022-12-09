@@ -20,7 +20,6 @@ public class APILogin extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        response.addHeader("Access-Control-Allow-Origin", "http://localhost:3000");
         response.addHeader("Access-Control-Allow-Origin", "http://localhost:5000");
 
         String email = request.getParameter("email");
