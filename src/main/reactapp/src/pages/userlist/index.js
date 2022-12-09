@@ -77,7 +77,7 @@ class UserList extends React.Component {
                         <span>Users</span>
 
                         <div className="hrem-search">
-                            <input type="text" onChange={this.myFunction}/>
+                            <input type="text" onChange={this.searchUser}/>
                             <i className="fa fa-search"></i>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ class UserList extends React.Component {
 
     }
 
-    myFunction() {
+    searchUser() {
 
         let input, filter, list, data, n, r, i, name, role;
         input = document.querySelector('.hrem-search input');
