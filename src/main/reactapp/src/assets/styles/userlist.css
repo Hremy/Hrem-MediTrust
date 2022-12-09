@@ -1,0 +1,118 @@
+
+.hrem-users {
+    width: 98%;
+    background-color: #ffffff;
+    margin: 50px auto 50px auto;
+    border-radius: 8px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hrem-users .hrem-title {
+    font-size: 18px;
+    color: #3f3f3f;
+    padding: 10px 10px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hrem-users .hrem-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.hrem-users .hrem-title span {
+    flex: 30%;
+    font-weight: 700;
+}
+
+.hrem-users .hrem-title .hrem-sort {
+    flex: 30%;
+    font-weight: 400;
+    text-align: left;
+}
+
+.hrem-users .hrem-title .hrem-search {
+    flex: 30%;
+    display: flex;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.hrem-users .hrem-title .hrem-search .fa {
+    padding-top: 4px;
+    margin-left: -20px;
+}
+
+.hrem-users .hrem-title .hrem-search input {
+    width: calc(100% - 20px);
+    border: solid 0 #000000;
+    padding-right: 25px;
+    margin-left: 20px;
+}
+
+.hrem-users .hrem-title .hrem-search input:focus {
+    outline: solid 0 #000000;
+    border: solid 0 #3f3f3f;
+    border-bottom: solid 1px #3f3f3f;
+}
+
+.hrem-users .hrem-user-list {
+    width: 100%;
+    height: 55vh;
+    margin: 5px 0;
+    padding: 10px 50px;
+    overflow-y: auto;
+}
+
+.hrem-users .hrem-user-data {
+    display: inline-flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.hrem-users .hrem-user-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: #cccccc;
+    border-radius: 50%;
+}
+
+.hrem-users .hrem-user-info {
+    width: 80%;
+    margin-left: 20px;
+    border-bottom: solid 1px #d7d6d6;
+}
+
+.hrem-users .hrem-user-name {
+    color: #424242;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.hrem-users .hrem-user-role {
+    color: #5b5b5b;
+    font-size: 14px;
+    text-align: left;
+}
+
+.hrem-users .error {
+    min-height: 20px;
+    font-size: 18px;
+    color: #FF0000;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -50vh;
+    margin-bottom: 40vh;
+    visibility: hidden;
+}
+.hrem-users .error.active {
+    visibility: visible;
+}
+.hrem-users .error.success {
+    visibility: visible;
+    color: #04b04e;
+}

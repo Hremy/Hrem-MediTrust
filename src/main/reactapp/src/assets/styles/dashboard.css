@@ -1,0 +1,106 @@
+
+.App {
+    text-align: center;
+    background-color: #eeeeee;
+    height: 100vh;
+    padding: 20px;
+}
+
+.hrem-dashboard {
+    width: 97%;
+    background-color: #ffffff;
+    margin: 60px auto 0 auto;
+    padding: 1px 20px;
+    border-radius: 8px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hrem-dashboard .hrem-title {
+    font-size: 23px;
+    font-weight: bold;
+    color: #19317e;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.hrem-dashboard table {
+    width: 100%;
+    min-height: 300px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.hrem-dashboard td,
+.hrem-dashboard th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.hrem-dashboard th {
+    text-align: center;
+}
+
+.hrem-dashboard td {
+    font-size: 14px;
+    text-align: center;
+}
+
+.hrem-dashboard tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.hrem-dashboard .hrem-tools {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.hrem-dashboard .hrem-tools button {
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: solid 1px #FFFFFF;
+    padding: 5px 5px;
+    background-color: #19317e;
+    visibility: hidden;
+}
+.hrem-dashboard .hrem-tools button.active {
+    background-color: #05a4af;
+}
+.hrem-dashboard .hrem-tools button.show {
+    visibility: visible;
+}
+
+.hrem-dashboard .hrem-tools button:hover {
+    background-color: #0a9b6a;
+}
+
+.hrem-dashboard .hrem-tools a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.hrem-dashboard .hrem-tools i {
+    margin-right: 10px;
+}
+
+.hrem-dashboard .error {
+    min-height: 20px;
+    font-size: 18px;
+    color: #FF0000;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -30vh;
+    margin-bottom: 30vh;
+    visibility: hidden;
+}
+.hrem-dashboard .error.active {
+    visibility: visible;
+}
+.hrem-dashboard .error.success {
+    visibility: visible;
+    color: #04b04e;
+}

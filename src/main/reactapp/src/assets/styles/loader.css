@@ -1,0 +1,99 @@
+.hrem-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    zoom: 0.6;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    visibility: hidden;
+}
+.hrem-roller.small {
+    zoom: 0.4;
+}
+.hrem-roller.active {
+    visibility: visible;
+    display: inline-block;
+}
+.hrem-roller.hidden {
+    display: none;
+}
+
+.hrem-roller div {
+    animation: hrem-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.hrem-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #19317e;
+    margin: -4px 0 0 -4px;
+}
+.hrem-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.hrem-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.hrem-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.hrem-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.hrem-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.hrem-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.hrem-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.hrem-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.hrem-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.hrem-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.hrem-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.hrem-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.hrem-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.hrem-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.hrem-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.hrem-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes hrem-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

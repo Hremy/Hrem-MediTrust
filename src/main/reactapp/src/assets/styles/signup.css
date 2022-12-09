@@ -1,0 +1,166 @@
+
+.hrem-signup {
+    width: min-content;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+    padding: 1px 20px;
+    border-radius: 8px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hrem-signup .hrem-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #19317e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hrem-signup .hrem-hint {
+    font-size: 16px;
+    font-weight: 400;
+    color: #676767;
+}
+
+.hrem-signup .hrem-hint a {
+    color: #10c9d5;
+    font-weight: 600;
+}
+
+.hrem-signup .hrem-form {
+    width: 500px;
+    margin: 30px 0;
+}
+
+.hrem-signup .hrem-form-input-group {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+}
+.hrem-signup .hrem-form-input-group .hrem-form-input {
+    width: 48%;
+}
+
+.hrem-signup .hrem-form-input {
+    width: 95%;
+}
+
+.hrem-signup .hrem-form-input input {
+    width: 100%;
+    height: 23px;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: solid 1.5px #c7c7c7;
+    margin: 12px 0;
+}
+.hrem-signup .hrem-form-input input:focus {
+    outline: solid 1px #a4a4a4;
+}
+
+.hrem-signup .error {
+    font-size: 18px;
+    color: #FF0000;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -10px;
+    margin-right: -22px;
+    visibility: hidden;
+}
+.hrem-signup .error.active {
+    visibility: visible;
+}
+.hrem-signup .error.success {
+    visibility: visible;
+    color: #04b04e;
+}
+.hrem-signup .hrem-form-input .error {
+    float: right;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.hrem-signup .hrem-form-input.radio {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 1.5px #c7c7c7;
+    margin-bottom: 10px;
+}
+.hrem-signup .hrem-form-input.radio input {
+    display: inline-block;
+    width: 50px;
+}
+.hrem-signup .hrem-form-input.radio input:focus {
+    outline: none;
+}
+.hrem-signup .hrem-form-input.radio label {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    color: #4b4b4b;
+    float: left;
+    text-align: left;
+}
+
+.hrem-signup .hrem-form-submit {
+    margin: 10px 0;
+}
+
+.hrem-signup .hrem-form-submit button {
+    width: 100%;
+    height: 45px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    border: solid 0 #FFFFFF;
+    padding: 0 45px 0 25px;
+    background-color: #03cb59;
+}
+
+.hrem-signup .hrem-form-submit button:hover {
+    background-color: #19317e;
+}
+.hrem-signup .hrem-form-submit button:focus {
+
+}
+
+.hrem-signup .hrem-form-submit button i {
+    float: left;
+    font-size: 18px;
+}
+
+.hrem-signup .hrem-form-select {
+    width: 100%;
+}
+.hrem-signup .hrem-form-select label {
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3f3f3f;
+    margin: 5px 0;
+}
+.hrem-signup .hrem-form-select select {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: solid 1.5px #c7c7c7;
+}
+.hrem-signup .hrem-form-select select:focus {
+    outline: solid 1.5px #c7c7c7;
+}
+.hrem-signup .hrem-form-select option {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.hrem-signup .hrem-form-select .error {
+    margin-right: 0;
+    margin-bottom: 20px;
+}

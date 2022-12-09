@@ -1,0 +1,26 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "middleware.js",
+  "scripts": {
+    "start": "node middleware.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node-fetch": "^2.6.2",
+    "jest": "^29.3.1",
+    "node-fetch": "^3.3.0",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  },
+  "proxy": "http://localhost:3000"
+}

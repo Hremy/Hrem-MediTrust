@@ -1,0 +1,103 @@
+
+@import "loader.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+html {
+    background-color: #eeeeee;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+    text-align: center;
+    background-color: #eeeeee;
+    height: 100vh;
+    padding: 10px;
+}
+
+.hrem-app-title {
+    width: max-content;
+    font-size: 28px;
+    font-weight: bold;
+    color: #19317e;
+    margin: auto;
+    padding: 5px 5px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hrem-profile {
+    width: 96%;
+    min-height:55px;
+    background-color: #ffffff;
+    margin: 0px auto 0 auto;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hrem-profile-picture {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.hrem-profile-picture img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: #cccccc;
+    border-radius: 50%;
+    border: solid 2px #19317e;
+}
+
+.hrem-profile-picture span {
+    margin-left: 10px;
+}
+.hrem-profile-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+.hrem-profile-role {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hrem-profile-logout {
+    text-align: right;
+    margin-top: -48px;
+    cursor: pointer;
+    color: #19317e;
+}
+
+.hrem-profile-logout a {
+    text-decoration: none;
+}
+
+.hrem-profile-logo {
+    margin-top: -50px;
+}
+
+.hrem-profile-logo img {
+    height: 50px;
+}
+
+.hrem-profile-menu {
+    display: inline-block;
+}
+
+.hrem-profile-menu i {
+    margin-right: 3px;
+}
