@@ -77,7 +77,7 @@ class UserList extends React.Component {
                         <span>Users</span>
 
                         <div className="hrem-search">
-                            <input type="text"/>
+                            <input type="text" onChange={this.myFunction}/>
                             <i className="fa fa-search"></i>
                         </div>
                     </div>
@@ -134,6 +134,28 @@ class UserList extends React.Component {
         }
 
         this.controller.fetch();
+
+    }
+
+    myFunction() {
+
+        let input, filter, list, data, n, r, i, name, role;
+        input = document.querySelector('.hrem-search input');
+        filter = input.value.toUpperCase();
+        list = document.querySelector(".hrem-user-list");
+        data = list.querySelectorAll('.hrem-user-data');
+
+        for (i = 0; i < data.length; i++) {
+            n = data[i].querySelector(".hrem-user-name");
+            r = data[i].querySelector(".hrem-user-role");
+            name = n.innerHTML;
+            role = r.innerHTML;
+            if (name.toUpperCase().indexOf(filter) > -1 || role.toUpperCase().indexOf(filter) > -1) {
+                data[i].style.display = "";
+            } else {
+                data[i].style.display = "none";
+            }
+        }
 
     }
 
