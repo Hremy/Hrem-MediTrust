@@ -42,3 +42,5 @@ build/
 /src/main/reactapp/node_modules/
 /.idea/
 /.mvn/
+mvnw.cmd
+.mvn
