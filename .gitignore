@@ -40,3 +40,5 @@ build/
 #### Node Modules ###
 /src/main/nodejs/node_modules/
 /src/main/reactapp/node_modules/
+/.idea/
+/.mvn/
