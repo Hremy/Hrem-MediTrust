@@ -43,5 +43,4 @@ build/
 /.idea/
 /.mvn/
 mvnw.cmd
-.mvn
-.mvnw
+mvnw
