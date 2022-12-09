@@ -116,3 +116,15 @@
     visibility: visible;
     color: #04b04e;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .hrem-users .hrem-user-list {
+        padding: 10px 0px;
+    }
+
+    .hrem-users .hrem-user-data {
+        width: 85%;
+    }
+
+}

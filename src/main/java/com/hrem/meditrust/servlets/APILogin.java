@@ -28,10 +28,7 @@ public class APILogin extends HttpServlet {
         Gson gson = new Gson();
         JsonObject jsonResponse = new JsonObject();
 
-        User user = new User(email, password) {
-            @Override
-            public void signup() {}
-        };
+        User user = User.initialize(email, password);
 
         Status status = user.login();
 

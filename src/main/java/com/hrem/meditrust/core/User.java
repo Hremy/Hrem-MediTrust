@@ -47,7 +47,6 @@ public abstract class User implements UserLogin {
     public String getRole() {return role;}
 
 
-
     @Override
     public Status login() {
 
@@ -67,6 +66,14 @@ public abstract class User implements UserLogin {
             return Status.USER_NOT_FOUND;
         }
 
+    }
+
+    public static User initialize(String email, String password) {
+        User user = new User(email, password) {
+            @Override
+            public void signup() {}
+        };
+        return user;
     }
 
 }

@@ -17,6 +17,7 @@
 }
 
 .hrem-dashboard .hrem-title {
+    min-height: 35px;
     font-size: 23px;
     font-weight: bold;
     color: #19317e;
@@ -121,4 +122,13 @@
 
 .hrem-dashboard .hrem-dashboard-sheet.download:hover {
     background-color: #05a4af;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .hrem-dashboard {
+        width: 85%;
+    }
+
 }

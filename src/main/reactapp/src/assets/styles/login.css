@@ -100,3 +100,32 @@
     float: left;
     font-size: 18px;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .hrem-login {
+        width: 85%;
+    }
+
+    .hrem-login .hrem-form {
+        width: 90%;
+    }
+
+    .hrem-login .hrem-form-input {
+        width: 100%;
+    }
+    .hrem-login .hrem-form-input-group {
+        display: block;
+        width: 100%;
+    }
+
+    .hrem-login .hrem-form-input.radio input {
+        width: 100%;
+    }
+
+    .hrem-login .hrem-form-input-group .hrem-form-input {
+        width: 100%;
+    }
+
+}

@@ -101,3 +101,20 @@ code {
 .hrem-profile-menu i {
     margin-right: 3px;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .hrem-profile-logo {
+        display: none;
+    }
+
+    .hrem-profile-menu {
+        display: block;
+    }
+
+    .hrem-profile {
+        width: 85%;
+    }
+
+}

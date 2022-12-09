@@ -167,3 +167,33 @@
     float: right;
     font-weight: 400;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .hrem-signup {
+        width: 85%;
+    }
+
+    .hrem-signup .hrem-form {
+        width: 90%;
+    }
+
+    .hrem-signup .hrem-form-input {
+        width: 100%;
+    }
+    .hrem-signup .hrem-form-input-group {
+        display: block;
+        width: 100%;
+    }
+
+    .hrem-signup .hrem-form-input.radio input {
+        width: 100%;
+    }
+
+    .hrem-signup .hrem-form-input-group .hrem-form-input {
+        width: 100%;
+    }
+
+}
