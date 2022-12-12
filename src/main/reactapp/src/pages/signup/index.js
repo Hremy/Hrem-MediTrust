@@ -34,7 +34,7 @@ class SignUp extends React.Component {
 
                     <form className="hrem-form" method="POST" onSubmit={SignUpController.onSubmit} autoComplete="off">
 
-                        <div className="hrem-form-input">
+                        <div className="hrem-form-input gender">
                             <div className="hrem-form-input-group">
                                 <div className="hrem-form-input radio">
                                     <input id="male" type="radio" name="gender" value="Male" autoComplete="off"/>

@@ -71,7 +71,7 @@ class UserList extends React.Component {
 
                     <div className="hrem-title">
                         <div className="hrem-sort">
-                            <i className="fa fa-bars"></i>
+                            <i className="fa fa-download"></i>
                         </div>
 
                         <span>Users</span>
@@ -133,7 +133,15 @@ class UserList extends React.Component {
             document.querySelector(".hrem-profile-role").innerHTML = user.role + " • " + user.email;
         }
 
-        this.controller.fetch();
+        this.controller.fetch(false);
+
+        const _self = this;
+
+        document.querySelector(".hrem-sort").addEventListener("click", function() {
+
+            _self.controller.fetch(true);
+
+        });
 
     }
 

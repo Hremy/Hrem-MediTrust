@@ -224,7 +224,7 @@ class DashboardController extends React.Component {
 
         a.setAttribute('href', url)
 
-        a.setAttribute('download', `sheet-${sheet}.csv`);
+        a.setAttribute('download', `${sheet}.csv`);
 
         a.click()
     }

@@ -31,6 +31,7 @@
     flex: 30%;
     font-weight: 400;
     text-align: left;
+    cursor: pointer;
 }
 
 .hrem-users .hrem-title .hrem-search {

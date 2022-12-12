@@ -2,6 +2,8 @@ import React from 'react';
 
 import {API_NODE_URL_USER_LIST} from '../config'
 
+import {exportCSVUsers} from '../utils/index';
+
 class UserListController extends React.Component {
 
     constructor(props) {
@@ -18,13 +20,15 @@ class UserListController extends React.Component {
         document.querySelector("title").innerHTML = "UserList | MediTrust - Remy";
     }
 
-    fetch() {
+    fetch(download) {
 
         const userList = document.querySelector(".hrem-user-list");
         const loader = document.querySelector(".hrem-roller.userlist");
         const error = document.querySelector(".error.userlist");
 
-        loader.classList.add("active");
+        if(!download) {
+            loader.classList.add("active");
+        }
 
         error.classList.remove("active")
         error.innerHTML = "";
@@ -43,7 +47,11 @@ class UserListController extends React.Component {
 
                     if(success) {
 
-                        userList.innerHTML += JSON.parse(data).map(user =>
+                        if(download) {
+                            exportCSVUsers(data, "User List");
+                        }
+
+                        userList.innerHTML = JSON.parse(data).map(user =>
                             `
                             <div class="hrem-user-data">
                                 <div class="hrem-user-image">

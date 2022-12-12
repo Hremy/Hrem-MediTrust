@@ -2,6 +2,8 @@ import React from 'react';
 
 import {API_NODE_URL_LOGIN} from '../config'
 
+import {isValidateEmail} from '../utils/index';
+
 class LoginController extends React.Component {
 
     constructor(props) {
@@ -40,14 +42,6 @@ class LoginController extends React.Component {
             errorEmail.innerHTML = "Email is required";
             isValid = false;
         }
-
-        const isValidateEmail = (email) => {
-            return String(email)
-                .toLowerCase()
-                .match(
-                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-                );
-        };
 
         if (!isValidateEmail(email)) {
             errorEmail.classList.add("active")

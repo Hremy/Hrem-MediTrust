@@ -177,11 +177,14 @@
     }
 
     .hrem-signup .hrem-form {
-        width: 90%;
+        width: 100%;
     }
 
     .hrem-signup .hrem-form-input {
-        width: 100%;
+        width: 90%;
+    }
+    .hrem-signup .hrem-form-input.gender {
+        width: 97%;
     }
     .hrem-signup .hrem-form-input-group {
         display: block;
